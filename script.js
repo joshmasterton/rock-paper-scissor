@@ -30,3 +30,31 @@ function getUserChoice(event)
         return "scissor";
     };
 };
+
+function gameBoard()
+{
+    const root = document.getElementById("root");
+    const result = document.createElement("div");
+    const choice = document.createElement("div");
+    result.id = "result";
+    choice.id = "choice";
+    root.appendChild(result);
+    root.appendChild(choice);
+
+    const rockBtn = document.createElement("div");
+    const paperBtn = document.createElement("button");
+    const scissorBtn = document.createElement("button");
+    rockBtn.className = "btn";
+    paperBtn.className = "btn";
+    scissorBtn.className = "btn";
+    choice.appendChild(rockBtn);
+    choice.appendChild(paperBtn);
+    choice.appendChild(scissorBtn);
+
+    const comChoice = document.createElement("div");
+    const userChoice = document.createElement("div");
+    result.appendChild(comChoice);
+    result.appendChild(userChoice);
+};
+
+gameBoard();
