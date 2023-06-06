@@ -97,7 +97,7 @@ function playRound(event, comElement, userElement, winner)
     else
     {
         winner.innerHTML = "draw";
-    }
+    };
 };
 
 gameBoard();
